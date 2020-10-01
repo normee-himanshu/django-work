@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <h1>this is the homepage</h1>
+    <p>welcome to djnago</p>
+    <form class="wel-login" action="/accounts/login" method="post">
+      {% csrf_token %}
+
+      <input type="submit" value="Login">
+
+    </form>
+    <form class="wel-signup" action="/accounts/signup" method="post">
+      {% csrf_token %}
+
+      <input type="submit" value="Signup">
+
+    </form>
+
+  </body>
+</html>
